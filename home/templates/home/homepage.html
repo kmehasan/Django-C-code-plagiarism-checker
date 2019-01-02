@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>homepage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #9EAB7F;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 900px; /* only for demonstration, should be removed */
+  background: #EDEEB0;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #DAF7A6;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #9EAB7F;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<img src="https://www.sust.edu/images/logo.png" alt="SUST logo" style="width:100px;height:120px;">
+<h2>Shahjalal University of Science and Technology</h2>
+<p>Shahjalal University of Science and Technology is a moderately young university on the North-East Bangladesh with 27 departments under 7 schools. All of these departments undergo one or more lab courses throughout the course duration. There are major lab courses that only the students of that department undertake and there are non-major lab courses for the students of other departments. There are second major labs too. With all these students and limited resources, it makes it a tiresome job to schedule the time and scopes for all the students. Our aim is to create a platform that makes the time management easier for all parties involved with minimum confusion.</p>
+
+<header>
+  <h2>Lab Manager</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="/physics">Physics</a></li>
+      <li><a href="/chemistry">Chemistry</a></li>
+      <li><a href="/mathematics">Mathematics</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Physics</h1>
+    <p>Shahjalal University of Science and Technology (SUST) started its journey on 14 February 1991. The academic session 1990-1991 was commenced on the same day. The 1st class of the first 1st year was on 16 February 1991 in the room 307A and the class was conducted by the Head of the Department Professor Dr. Arun Kumar Basak.</p>
+  </article>
+
+<article>
+    <h1>Chemistry</h1>
+    <p>Welcome to the department of Chemistry, SUST. It is the one of the oldest department of SUST. Currently 350 students are studying in this department in four major disciplines such as Inorganic Physical Chemistry, Inorganic Chemistry, Organic Chemistry and Analytical Chemistry.</p>
+  </article>
+
+<article>
+    <h1>Mathematics</h1>
+    <p>The Department of Mathematics, Shahjalal University of Science and Technology is a department with glorious past and brilliant present. It is one of the oldest; most vibrant and dynamic departments of the university. The department started its academic journey in the year 1992.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Thank you for visiting</p>
+</footer>
+
+</body>
+</html>
